@@ -13,9 +13,9 @@ spec:
     metadata:
       labels:
         app: usn-nginx
-      spec:
-        containers:
-        - name: nginx
-          image: 172.1.14.168:5001/nginx
-          ports:
-          - containerPort: 80
+    spec:
+      containers:
+      - name: nginx
+        image: 172.1.14.168:5001/nginx
+        ports:
+        - containerPort: 80

@@ -1,0 +1,8 @@
+kubectl apply -f dep.yaml
+kubectl get pods | grep usn
+kubectl expose deployment usn-nginx-deployment --type=NodePort --name=usn-nginx-service
+kubectl get svc | grep usn
+
+http://172.1.14.168:<nodeport>
+
+kubectl port-forward deployment/usn-nginx-deployment/usn-nginx newport:<nodeport>
