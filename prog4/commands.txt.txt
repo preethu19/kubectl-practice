@@ -1,0 +1,4 @@
+kubectl apply -f dep.yaml
+kubectl logs ubuntu
+kubectl exec --stdin --tty ubuntu -- /bin/bash
+kubectl delete pod ubuntu
