@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: ubuntu
-    image: 172.1.14.168:5001/ubuntu
+    image: ubuntu
     env:
     - name: MESSAGE
       value: "MSRIT"
