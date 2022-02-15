@@ -1,0 +1,14 @@
+kind: Pod
+metadata:
+  name: ubuntu
+  labels:
+    app: ubuntu
+spec:
+  containers:
+  - name: ubuntu
+    image: 172.1.14.168:5001/ubuntu
+    env:
+    - name: MESSAGE
+      value: "MSRIT"
+    command: ["/bin/echo"]
+    args: ["$(MESSAGE)"]
