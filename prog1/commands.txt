@@ -5,4 +5,4 @@ kubectl get svc | grep usn
 
 http://172.1.14.168:<nodeport>
 
-kubectl port-forward deployment/usn-nginx-deployment/usn-nginx newport:<nodeport>
+kubectl port-forward deployment/usn-nginx-deployment newport:<nodeport>

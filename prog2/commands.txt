@@ -1,0 +1,4 @@
+kubectl apply -f dep.yaml
+kubectl expose deployment usn-nginx-deployment --type=NodePort --name=usn-nginx-service
+kubectl set image deployment/usn-nginx-deployment nginx=newImage
+kubectl describe deploy usn-nginx-deployment | grep Image:
